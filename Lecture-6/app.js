@@ -52,4 +52,53 @@ students[updatedIndex] = {
 // updatedObject.email = updatedData.email;
 // console.log(updatedObject);
 
-console.log(students);
+//now we crated a object and all those think again do
+
+const student2 = {
+  "89239ij39uu493nxq": {
+    id: "89239ij39uu493nxq",
+    name: "md Ekramul",
+    email: "mdekramul168@.com",
+  },
+  "89ue939w93292": {
+    id: "89ue939w93292",
+    name: "md yasin",
+    email: "mdyasin168@.com",
+  },
+  "83suidu8eww838392": {
+    id: "83suidu8eww838392",
+    name: "md shown",
+    email: "mdshown168@.com",
+  },
+};
+
+const std = {
+  id: "344354ksdnsj2kwkd",
+  name: "hassan mamun",
+  email: "hassan@gmail.com",
+};
+
+student2[std.id] = std;
+// console.log((student2[std.id] = std));
+
+const idToObjectUpdate = "344354ksdnsj2kwkd";
+const updateObject = {
+  name: "Eklast",
+  email: "okok@12gmail.com",
+};
+
+student2[idToObjectUpdate] = {
+  ...student2[idToObjectUpdate],
+  ...updateObject,
+};
+
+delete student2[idToObjectUpdate];
+
+console.log(Object.keys(student2));
+Object.values(student2).forEach((std) => {
+  console.log(std.name);
+});
+
+// console.log((student2[idToObjectUpdate] = updateObject));
+
+// console.log(student2.);
